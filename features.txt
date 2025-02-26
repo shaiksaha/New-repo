@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 add some new features
+=======
+Making new feature-update branch in directory
+>>>>>>> feature-update
