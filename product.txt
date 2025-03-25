@@ -1,1 +1,9 @@
 this file contain the updated version
+
+git add product.txt
+
+<<<<<<< HEAD
+this file contain the updated version
+=======
+this is branch contain original of product
+>>>>>>> features
