@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    #result {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    span{
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+    #result{
+      margin-left: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Choose your move:</h2>
+  <button  class="rock">🪨 Rock</button>
+  <button class="paper">📄 Paper</button>
+  <button class="scissor">✂️ Scissors</button>
+   <span><p class="you"></p></span>
+   <span><p class="machine"></p></span>
+  <p id="result">Let’s play!</p>
+
+  <script>
+    let rock = document.querySelector('.rock');
+    let paper = document.querySelector('.paper');
+    let scissor = document.querySelector('.scissor');
+    let p = document.querySelector('#result');
+    let you = document.querySelector('.you');
+    let machine = document.querySelector('.machine');
+
+  let arr = ["Rock","Paper","Scissors"];
+   rock.addEventListener("click",function(){
+      let ramdomindex = Math.floor(Math.random()*3);
+      let randomvalue = arr[ramdomindex];
+       you.innerText = "You : " + "Rock";
+       machine.innerText = "Machine : " + randomvalue;
+      if(randomvalue === "Rock"){
+         p.innerText = "please try again both are same";
+      }
+      else if(randomvalue === "Paper"){
+          p.innerText = "you lose";
+      }
+      else if(randomvalue === "Scissors"){
+          p.innerText = "you win";
+      }
+
+   });
+
+   paper.addEventListener("click",function(){
+      let ramdomindex = Math.floor(Math.random()*3);
+      let randomvalue = arr[ramdomindex];
+       you.innerText = "You : " + "Paper";
+       machine.innerText = "Machine : " + randomvalue;
+      if(randomvalue === "Paper"){
+         p.innerText = "please try again both are same";
+      }
+      else if(randomvalue === "Scissors"){
+          p.innerText = "you lose";
+      }
+      else if(randomvalue === "Rock"){
+          p.innerText = "you win";
+      }
+
+   });
+
+   scissor.addEventListener("click",function(){
+      let ramdomindex = Math.floor(Math.random()*3);
+      let randomvalue = arr[ramdomindex];
+       you.innerText = "You : " + "Scissors";
+       machine.innerText = "Machine : " + randomvalue;
+      if(randomvalue === "Scissors"){
+         p.innerText = "please try again both are same";
+      }
+      else if(randomvalue === "Rock"){
+          p.innerText = "you lose";
+      }
+      else if(randomvalue === "Paper"){
+          p.innerText = "you win";
+      }
+
+   });
+
+  </script>
+
+</body>
+</html>

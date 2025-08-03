@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+     <style>
+        *{
+            margin: 0px;
+            padding: 0px;;
+            box-sizing: border-box;
+        }
+        .logo1{
+
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color:#0f0f0f ;
+        }
+        nav{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            height: 80px;
+            background-color: #131212;
+        }
+        .logo h1{
+            font-weight: 700;
+            padding-left: 10x;
+            color: white;
+            font-family: sans-serif;
+            ;
+        }
+        .logo img{
+            width:32px;
+            height: 40px;
+            margin-top: ;
+            
+            
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+        }
+        .icon{
+            color: white;
+            font-size: 25px;
+            font-weight: 300;
+            margin-right: 20px;
+        }
+        
+      .search input{
+            width: 30rem;
+            padding: 13px;
+            background-color:#1a1919 ;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-family: sans-serif,'poppins';
+            font-size: 15px;
+      }
+      .search{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      #mic{
+        font-size: 25px;
+        color: rgb(201, 199, 199);
+      }
+      .account{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+      }
+      .account button{
+        padding: 8px 25px;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius:20px;
+        color: rgb(211, 211, 211);
+        background-color: #636060;
+        border: none;
+      }
+      .account div i{
+          font-size:23px ;
+          color: rgb(219, 215, 215);
+      }
+      .container{
+         display: flex;
+      }
+        .sidebar{
+            width: 30%;;
+            height: 80vh;    
+        }
+        .sec{
+            width: 70%;
+            height: 80vh;
+        }
+       .update{
+          color: white;
+          font-family: 'poppin',sans-serif;
+          background-color: #212121; 
+          display: inline-block;
+          padding: 30px 80px;
+          border-radius: 15px;
+          border: solid rgb(173, 173, 173) 1px;
+          margin-top: 70px;
+
+       }
+       .update h1,p,button{
+           margin-top: 10px;
+       }
+       .update button{
+           padding: 15px 25em;
+           color: rgb(230, 227, 227);
+           background-color: #585858;
+           border: none;
+           font-size: 15px;
+       }
+
+     </style>
+</head>
+<body>
+ <nav>
+    <div class="logo">
+        <div>
+            <span  class="icon"><i  class="fas fa-bars" ></i></span>
+        
+        </div>
+        <div>
+            <span class="logo1"><img src="youtube.png" alt=""></span>
+        </div>
+    </div>
+    <div class="search">
+        <div><input type="search " placeholder="Search...."></div>
+        <div><i class="fa-solid fa-microphone" id="mic"></i></div>
+    </div>
+    <div class="account">
+        <div><button>Create</button></div>
+        <div><i class="fa-regular fa-bell"></i></div>
+        <div><i class="fa-regular fa-user"></i></div>
+    </div>
+ </nav>
+ <div class="container">
+    <div class="sidebar">
+
+    </div>
+    <div class="sec">
+       <div class="update">
+           <h1>Your watch history is off</h1>
+           <p>You can change your setting at any time to get the latest videos tailored to you. Learn more</p>
+           <button>Update</button>
+       </div>
+    </div>
+ </div>
+</body>
+</html>

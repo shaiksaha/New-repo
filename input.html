@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        } 
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(24, 24, 24);
+        }
+         input{
+            padding: 10px 5px;
+            width: 10rem;
+            background-color: rgb(62, 65, 65);
+            color: rgb(214, 212, 210);
+         }
+         p{
+            font-size: 25px;
+            padding: 10px;
+            font-weight: 600;
+            color: white;
+         }
+    </style>
+</head>
+<body>
+ <input type="text">
+ <p>0</p>
+<p class="word">0</p>
+ <script> 
+ let inp = document.querySelector('input');
+ let p = document.querySelector('p');
+ let count = 0;
+ inp.addEventListener("input",function(det){
+        console.log(det.target.value)
+         let word =    document.querySelector('.word');
+     let arr = inp.value.trim().split(/\s+/);
+
+     word.innerText = arr.length;
+         p.innerText = inp.value.replace(/\s/g, '').length;
+
+     
+;
+ });
+ </script>
+</body>
+</html>
